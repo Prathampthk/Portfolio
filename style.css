@@ -257,53 +257,6 @@ section .title::after {
   background: none;
 }
 
-/* services section styling */
-/* .services,
-.teams {
-  color: #fff;
-  background: #111;
-}
-.services .title::before,
-.teams .title::before {
-  background: #fff;
-}
-.services .title::after,
-.teams .title::after {
-  background: #111;
-  content: "what i did";
-}
-.services .serv-content .card {
-  width: calc(33% - 20px);
-  background: #222;
-  text-align: center;
-  border-radius: 6px;
-  padding: 20px 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.services .serv-content .card:hover {
-  background: crimson;
-}
-.services .serv-content .card .box {
-  transition: all 0.3s ease;
-}
-.services .serv-content .card:hover .box {
-  transform: scale(1.05);
-}
-.services .serv-content .card i {
-  font-size: 50px;
-  color: crimson;
-  transition: color 0.3s ease;
-}
-.services .serv-content .card:hover i {
-  color: #fff;
-}
-.services .serv-content .card .text {
-  font-size: 25px;
-  font-weight: 500;
-  margin: 10px 0 7px 0;
-} */
-
 /* Experience Section Styling */
 
 .experience {
@@ -490,36 +443,44 @@ section .title::after {
 }
 
 /* teams section styling */
-.teams .title::after {
-  content: "who with me";
+.projects .title::after {
+  content: "what I built"; /* Updated text for the projects section */
 }
-.teams .carousel .card {
+
+.projects .carousel .card {
   background: #222;
+  color: #ddd;
   border-radius: 6px;
   padding: 25px 35px;
   text-align: center;
   overflow: hidden;
   transition: all 0.3s ease;
 }
-.teams .carousel .card:hover {
+
+.projects .carousel .card:hover {
   background: crimson;
 }
-.teams .carousel .card .box {
+
+.projects .carousel .card .box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box {
+
+.projects .carousel .card:hover .box {
   transform: scale(1.05);
 }
-.teams .carousel .card .text {
+
+.projects .carousel .card .text {
   font-size: 25px;
+  color: white;
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
-.teams .carousel .card img {
+
+.projects .carousel .card img {
   height: 150px;
   width: 150px;
   object-fit: cover;
@@ -527,13 +488,16 @@ section .title::after {
   border: 5px solid crimson;
   transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img {
+
+.projects .carousel .card:hover img {
   border-color: #fff;
 }
+
 .owl-dots {
   text-align: center;
   margin-top: 20px;
 }
+
 .owl-dot {
   height: 13px;
   width: 13px;
@@ -543,10 +507,12 @@ section .title::after {
   border: 2px solid crimson !important;
   transition: all 0.3s ease;
 }
+
 .owl-dot.active {
   width: 35px;
   border-radius: 14px;
 }
+
 .owl-dot.active,
 .owl-dot:hover {
   background: crimson !important;
