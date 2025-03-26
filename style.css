@@ -258,7 +258,7 @@ section .title::after {
 }
 
 /* services section styling */
-.services,
+/* .services,
 .teams {
   color: #fff;
   background: #111;
@@ -302,6 +302,116 @@ section .title::after {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
+} */
+
+/* Experience Section Styling */
+
+.experience {
+  color: #fff;
+  background: #111;
+  padding: 50px 0;
+}
+
+.experience .title {
+  text-align: center;
+  font-size: 28px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.experience .title::before {
+  background: #fff;
+}
+
+.experience .title::after {
+  background: #111;
+  content: "what I did";
+  position: absolute;
+  bottom: -10px; /* Adjust positioning */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: crimson;
+  padding: 5px 10px;
+}
+
+/* Adjust for mobile view */
+@media screen and (max-width: 768px) {
+  .experience .title::after {
+    bottom: -30px; /* Move the "what I did" text lower on mobile */
+    font-size: 16px; /* Optional: Make the font slightly bigger on mobile */
+  }
+}
+
+/* The rest of the experience section styles */
+.experience-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.experience-item {
+  background: #222;
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.experience-item:hover {
+  transform: scale(1.05);
+}
+
+.experience-item .icon {
+  width: 50px;
+  height: 50px;
+  background-color: crimson;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.experience-item .icon i {
+  font-size: 24px;
+  color: white;
+}
+
+.experience-item .content {
+  flex: 1;
+}
+
+.experience-item h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.experience-item .date {
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 10px;
+}
+
+.experience-item p {
+  font-size: 16px;
+  color: #ddd;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+  .experience-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .experience-list {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* skills section styling */
